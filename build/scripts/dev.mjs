@@ -123,7 +123,7 @@ async function handleResult(result) {
 }
 
 function runElectron() {
-  const electronProcess = $$`npx electron --inspect=5858 ${path.join(
+  const electronProcess = $`npx electron --no-sandbox --inspect=5858 ${path.join(
     root,
     'dist_electron',
     'dev',
